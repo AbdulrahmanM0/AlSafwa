@@ -1,0 +1,10 @@
+/* start main section */
+
+.main-section{
+    height: 100vh;
+    background-image: url('../../../../assets/images/logo4.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+/* end main section */
