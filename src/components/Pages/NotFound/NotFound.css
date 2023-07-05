@@ -1,0 +1,17 @@
+
+/* start not found page */
+.notFound-Container{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.notFound-Container p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* end not found page */

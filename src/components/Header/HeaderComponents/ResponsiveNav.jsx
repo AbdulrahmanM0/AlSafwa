@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { dataStore } from "../HandleData/ContextData";
+import { dataStore } from "../../HandleData/ContextData";
 
 
 export default function ResponsiveNav() {

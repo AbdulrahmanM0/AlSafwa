@@ -8,8 +8,13 @@
   -o-transition: .3s linear;
   transition: .3s linear;
 }
+body{
+  background-color: #ccc !important;
+}
 ul{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none !important;

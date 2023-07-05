@@ -1,0 +1,15 @@
+/* start footer Bottom */
+
+.footerBottom{
+    background-color: #141414;
+    padding: 20px 0;
+    color: #fff;
+}
+.footerBottom .facebookIcon a svg:nth-child(1){
+    font-size: 2rem;
+}
+.footerBottom .facebookIcon a:hover{
+    color: #fff;
+} 
+
+/* end footer Bottom */

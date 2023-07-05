@@ -1,10 +1,10 @@
 import './Header.css';
 import headerCover from '../../assets/covers/header-shape.png';
-import NavBar from './NavBar';
-import Logo from './Logo';
+import NavBar from './HeaderComponents/NavBar';
+import Logo from './HeaderComponents/Logo';
 import { useEffect, useState , useContext } from 'react';
-import ResponsiveNav from './ResponsiveNav';
-import MenueIcon from './MenueIcon';
+import ResponsiveNav from './HeaderComponents/ResponsiveNav';
+import MenueIcon from './HeaderComponents/MenueIcon';
 import { dataStore } from '../HandleData/ContextData';
 
 
@@ -29,7 +29,7 @@ export default function Header() {
       }, []);
 
   return (
-    <header>
+    <header className='header'>
         <div className='imgWave'>
             <img className='waveContainer' src={headerCover} alt='wave' />
         </div>

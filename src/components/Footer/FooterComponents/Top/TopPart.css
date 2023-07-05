@@ -1,0 +1,34 @@
+
+/* start footer top */
+.footerTop{
+    background-color: rgb(35, 34, 34);
+}
+
+.footerTop-container{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerTop-container .contact-info{
+    color: #fff;
+    font-weight: 400;
+}
+.footerTop-container .contact-info ul{
+    padding: 0;
+}
+.footerTop-container .contact-info li{
+    display: flex;
+    padding: 5px;
+}
+.footerTop-container .contact-info li p{
+    margin-left: 10px;
+}
+.contact-info h5{
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.gallery-container img{
+    max-width: 100px;
+}
+/* end footer top */
