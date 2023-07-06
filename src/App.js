@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NotFound from './components/Pages/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import UpButton from './components/UpButton/UpButton';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <UpButton />
       <Footer />
     </div>
   );

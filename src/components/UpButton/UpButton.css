@@ -1,0 +1,22 @@
+
+/* start up arrow */
+.upArrow{
+ position: fixed;
+ bottom: 30px;
+ right: 20px;
+ background: linear-gradient(208deg, rgba(142,158,93,1) 2%, rgba(203,239,19,1) 21%, rgba(219,253,149,1) 68%, rgba(237,255,161,1) 98%);
+ font-size: 2rem;
+ border-radius: 50%;
+ transform: rotate(90deg);
+ text-shadow: 10px 10px 10px #000;
+ cursor: pointer;
+}
+.upArrow:hover{
+    background: rgb(142,158,93);
+    background: linear-gradient(208deg, rgba(142,158,93,1) 2%, rgba(255,255,255,1) 21%, rgba(219,253,149,1) 68%, rgba(250,250,250,1) 98%);
+}
+.upArrow svg{
+    font-size: 2.9rem;
+
+}
+/* end up arrow */
