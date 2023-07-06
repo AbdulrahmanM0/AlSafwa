@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import NotFound from './components/Pages/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import UpButton from './components/UpButton/UpButton';
+import './components/IntersectioObserverStyle/InterSection.css';
 
 function App() {
   return (

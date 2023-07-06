@@ -1,0 +1,9 @@
+.interSecting{
+    transform: translateY(1);
+    opacity: 1;
+    transition: 1s;
+}
+.notInterSecting{
+    opacity: 0;
+    transform: translateY(100px);
+}

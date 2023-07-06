@@ -1,13 +1,18 @@
 import SplitItem from '../SplitItem/SplitItem';
 import './HeadComponent.css';
+import { InView } from 'react-intersection-observer';
+import { useState } from 'react';
 
 export default function HeadComponent(props) {
-    const {sectionName} = props;
+  const {sectionName} = props;
+  const [isInterSecting,setInterSecting] = useState(false);
   return (
-    <div>
-        <div className='headClass container'>
-            <h2>{sectionName}</h2>
-        </div>
-    </div>
+    <InView onChange={(inView,entry)=>{setTimeout(()=>setInterSecting(inView),1000)}}>
+      <div className={isInterSecting ? 'interSecting' :'notInterSecting' } >
+          <div className='headClass container'>
+              <h2>{sectionName}</h2>
+          </div>
+      </div>
+    </InView>
   )
 }
