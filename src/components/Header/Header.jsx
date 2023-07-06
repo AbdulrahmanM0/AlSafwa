@@ -9,7 +9,8 @@ import { dataStore } from '../HandleData/ContextData';
 
 
 export default function Header() {
-    const [windowWidth,setWindowWidth] = useState(getWindowWidth());
+    const [ windowWidth , setWindowWidth ] = useState(getWindowWidth());
+    const [ windowScroll , setWindowScroll ] = useState(0);
     const {setNavToggle} = useContext(dataStore);
 
     function getWindowWidth(){
@@ -28,12 +29,25 @@ export default function Header() {
         };
       }, []);
 
-  return (
-    <header className='header'>
-        <div className='imgWave'>
+      useEffect(()=>{
+        window.onscroll = () => {
+          setWindowScroll(window.scrollY);
+          console.log(windowScroll)
+        }  
+      },[])
+      
+      function handleWaveImg(){
+        return (
+          <div className='imgWave'>
             <img className='waveContainer' src={headerCover} alt='wave' />
-        </div>
-        <div className='container d-flex justify-content-between align-items-center p-4'>
+          </div>
+        )
+      }
+
+  return (
+    <header className={`header ${windowScroll >= 600 ? 'headerPositionFixed' : '' }`}>
+      {windowScroll <= 10 && handleWaveImg()}
+        <div className='container d-flex justify-content-between align-items-center p-4 '>
             <Logo />
             {windowWidth >= 965 ? <NavBar /> : <MenueIcon /> }
             <ResponsiveNav />
