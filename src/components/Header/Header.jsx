@@ -32,7 +32,6 @@ export default function Header() {
       useEffect(()=>{
         window.onscroll = () => {
           setWindowScroll(window.scrollY);
-          console.log(windowScroll)
         }  
       },[])
       

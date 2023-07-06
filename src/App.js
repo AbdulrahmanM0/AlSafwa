@@ -9,6 +9,8 @@ import NotFound from './components/Pages/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import UpButton from './components/UpButton/UpButton';
 import './components/IntersectioObserverStyle/InterSection.css';
+import ContactUs from './components/Pages/ContactUs/ContactUsPage/ContactUs';
+import ProductPage from './components/Pages/Products/ProductPage/ProductPage';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/product/:item" element={<ProductPage />} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
       <UpButton />

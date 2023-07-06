@@ -14,9 +14,7 @@ export default function UpButton() {
     <>
     {windowY >= 600 &&
     <div className='upArrow'onClick={()=>{handleTop()}} >
-        
             <ArrowCircleLeftSharpIcon />
-        
     </div>
     }
     </>

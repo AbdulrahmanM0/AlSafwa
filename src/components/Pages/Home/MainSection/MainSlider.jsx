@@ -1,9 +1,10 @@
 import Slider from "react-slick";
-import Item1 from "./SliderItem/Item1";
-import Item2 from "./SliderItem/Item2";
-import Item3 from "./SliderItem/Item3";
+import Items from "./SliderItem/Items";
+import { useContext } from "react";
+import { dataStore } from "../../../HandleData/ContextData";
 
 export default function MainSlider() {
+  const { CatalogueImages } = useContext(dataStore);
   const settings = {
     dots: false,
     infinite: true,
@@ -18,15 +19,12 @@ export default function MainSlider() {
   return (
     <div>
       <Slider {...settings}>
-        <div>
-          <Item1 />
-        </div>
-        <div>
-          <Item2 />
-        </div>
-        <div>
-          <Item3 />
-        </div>
+        {CatalogueImages.map(item=>
+          
+          <div key={item}>
+            <Items item={item} index={CatalogueImages.indexOf(item)} />
+          </div>
+        )}
       </Slider>
     </div>
   );

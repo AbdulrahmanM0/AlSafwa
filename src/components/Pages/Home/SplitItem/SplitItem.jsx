@@ -1,10 +1,10 @@
-import cloudeImg from '../../../../assets/covers/header_shape.png';
 import './SplitItem.css';
 
-export default function SplitItem() {
+export default function SplitItem(props) {
+  const {splitImg} = props;
   return (
     <div className='w-100 split-img-container'>
-        <img src={cloudeImg} alt='cloude' />
+        <img src={splitImg} alt='cloude' />
     </div>
   )
 }

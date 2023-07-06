@@ -5,7 +5,7 @@ import cloudeImg from '../../../../assets/covers/header_shape.png';
 export default function MainSection() {
   return (
     <section className='main-section'>
-      <div className='container h-100 d-flex align-items-center justify-content-between'>
+      <div className='container main-section-container h-100 d-flex align-items-center justify-content-between'>
         <div className='curtain'>
           <div className='typewriter'>
             <h1>Al Safwa</h1>

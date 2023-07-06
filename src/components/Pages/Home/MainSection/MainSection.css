@@ -8,8 +8,11 @@
     background-attachment: fixed;
 
 }
+.main-section .main-section-container{
+    overflow: hidden;
+}
 .main-section .sliderContainer{
-    margin: auto;
+   margin-top: 30px;
 }
 
 /* curtain */
