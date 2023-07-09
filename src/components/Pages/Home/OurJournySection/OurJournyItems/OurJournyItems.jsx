@@ -4,6 +4,7 @@ import { useEffect , useState } from "react";
 import { InView } from "react-intersection-observer";
 import './OurJournyItems.css';
 
+
 export default function OurJournyItems() {
     const [ windowWidth , setWindowWidth ] = useState(getWindowWidth());
     const { FactoryImages } = useContext(dataStore);
@@ -41,6 +42,7 @@ export default function OurJournyItems() {
             </div>
         </div>
         </InView>
+
     </div>
   )
 }

@@ -10,6 +10,9 @@
 }
 body{
   background-color: #ccc !important;
+  background-image: url('assets/images/backgrounds/background2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 ul{
   list-style: none;

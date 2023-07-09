@@ -1,5 +1,9 @@
+import MainSection from "../MainSection/MainSection";
+
 export default function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <div>
+      <MainSection />
+    </div>
   )
 }

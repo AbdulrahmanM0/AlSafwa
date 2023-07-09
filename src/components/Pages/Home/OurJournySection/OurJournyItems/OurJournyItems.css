@@ -1,5 +1,6 @@
 /* start our journy items */
 .ourJournyItems-container{
+    position: relative;
     overflow: hidden;
     width: 100%;
 }

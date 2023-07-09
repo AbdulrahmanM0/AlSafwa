@@ -2,6 +2,8 @@
 /* start footer top */
 .footerTop{
     background-color: rgb(35, 34, 34);
+    position: relative;
+    overflow: hidden;
 }
 
 .footerTop-container{
@@ -9,6 +11,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
 }
 .footerTop-container .contact-info{
     color: #fff;
@@ -35,4 +39,24 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+.coverSectionImg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    z-index: 5;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 /* end footer top */

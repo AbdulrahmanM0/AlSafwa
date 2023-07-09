@@ -3,10 +3,12 @@ import logoImg from '../../../../assets/images/LOGO/logo.png';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
+import CoverImageSection from '../../../../assets/covers/supplement_shape02.png';
 
 import { useContext } from 'react';
 import { dataStore } from '../../../HandleData/ContextData';
 import { Link } from 'react-router-dom';
+
 
 export default function TopPart() {
     const { FactoryImages } = useContext(dataStore);
@@ -51,6 +53,9 @@ export default function TopPart() {
                         </div>
                 </div>
             </div>
+        </div>
+        <div className="coverSectionImg">
+            <img  src={CoverImageSection} alt='cover image' />
         </div>
     </div>
   )
