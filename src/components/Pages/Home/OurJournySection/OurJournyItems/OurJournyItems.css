@@ -1,0 +1,35 @@
+/* start our journy items */
+.ourJournyItems-container{
+    overflow: hidden;
+    width: 100%;
+}
+.ourJourny-items{
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    text-align: center;
+}
+.ourJourny-items > div{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #036756;
+    border-radius: 10px;
+    padding: 10px;
+    margin: calc(24px/2);
+    font-weight: 400;
+}
+.ourJourny-items > div:hover{
+    background-image: url('../../../../../assets/images/backgrounds/background3.jpg');
+    color: #000;
+    box-shadow: 10px 10px 10px #ccc;
+    
+}
+.ourJourny-items > div > img{
+    border-radius: 5px;
+}
+.ourJourny-items > div > p{
+    font-size: 1.1rem;
+    /* -webkit-text-stroke: 1px #000; */
+    text-shadow: 0 0 5px #ccc;
+    font-weight: 600;
+}
+
+/* end our journy items */

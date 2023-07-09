@@ -7,3 +7,13 @@
     opacity: 0;
     transform: translateY(100px);
 }
+
+.interSecting-2{
+    transform: translateX(1);
+    opacity: 1;
+    transition: 1s;
+}
+.notInterSecting-2{
+    opacity: 0;
+    transform: translateX(100px);
+}

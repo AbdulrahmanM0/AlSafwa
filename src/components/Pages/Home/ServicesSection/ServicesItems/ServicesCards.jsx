@@ -9,7 +9,7 @@ export default function ServicesCards() {
     const [isInterSecting,setInterSecting] = useState(false);
 
   return (
-    <InView onChange={(inView,entry)=>{setTimeout(()=>setInterSecting(inView),1000)}} >
+    <InView onChange={(inView,entry)=>{setTimeout(()=>setInterSecting(inView),500)}} >
         <div className={isInterSecting ? 'interSecting' :'notInterSecting' } >
             <div className='container'>
                 <div className='row services-container'>

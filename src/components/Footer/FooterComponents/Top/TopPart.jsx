@@ -1,16 +1,15 @@
 import './TopPart.css';
-import logoImg from '../../../../assets/images/logo.png';
+import logoImg from '../../../../assets/images/LOGO/logo.png';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
 
+import { useContext } from 'react';
+import { dataStore } from '../../../HandleData/ContextData';
 import { Link } from 'react-router-dom';
-import galleryImg1 from '../../../../assets/images/logo2.jpg';
-import galleryImg2 from '../../../../assets/images/logo3.jpg';
-import galleryImg3 from '../../../../assets/images/logo4.jpg';
-import galleryImg4 from '../../../../assets/images/logo5.jpg';
 
 export default function TopPart() {
+    const { FactoryImages } = useContext(dataStore);
   return (
     <div className="footerTop">
         <div className="container footerTop-container">
@@ -45,13 +44,11 @@ export default function TopPart() {
             </div>
             <div className='m-3' >
                 <div className='gallery-container d-inline-block' >
-                    <div className=''>
-                        <img className='m-1 border border-success' src={galleryImg1} alt='galleryImg' />
-                        <img className='m-1 border border-success' src={galleryImg2} alt='galleryImg' />
-                        <div className='w-100 '></div>
-                        <img className='m-1 border border-success' src={galleryImg3} alt='galleryImg' />
-                        <img className='m-1 border border-success' src={galleryImg4} alt='galleryImg' />
-                    </div>
+                    <div className='footerGallery'>
+                        {FactoryImages.map(Factoryimg=>
+                        <img key={Factoryimg} className='m-1 border border-success' src={Factoryimg} alt='galleryImg' />
+                        )}
+                        </div>
                 </div>
             </div>
         </div>

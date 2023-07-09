@@ -31,4 +31,8 @@
 .gallery-container img{
     max-width: 100px;
 }
+.footerGallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 /* end footer top */
