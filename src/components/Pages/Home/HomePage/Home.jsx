@@ -6,9 +6,15 @@ import waveImg from '../../../../assets/covers/wave.svg';
 import waveImg2 from '../../../../assets/covers/wave (1).svg';
 import OurJournyISection from "../OurJournySection/OurJournyISection";
 import CatalogueSection from "../CatalogueSection/CatalogueSection";
+import { useEffect } from "react";
 
 
 export default function Home() {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+  
   return (
     <div>
         <MainSection />

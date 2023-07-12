@@ -10,8 +10,13 @@ export default function ProductPage() {
     const {item} = useParams();
 
     useEffect(()=>{
+        window.scrollTo(0,0)
+      },[]);
+      
+    useEffect(()=>{
         setIndexItem(item)
-    },[])
+    },[]);
+
 
   return (
     <section>    

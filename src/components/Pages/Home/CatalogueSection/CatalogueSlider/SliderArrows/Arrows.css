@@ -1,0 +1,48 @@
+
+.nextArrow{
+    width: 100px;
+}
+.nextArrow::before {
+    content: '';
+    display: none;
+
+  }
+
+.nextArrow{
+    color: #000 !important;
+    right: 0 !important;
+    width: 0 !important;
+    z-index: 20;
+}
+.nextArrow svg:hover{
+    background-color: #ccc;
+}
+
+.nextArrow svg{
+    font-size: 3rem !important;
+    position: absolute;
+    transition: .5s;
+    right: 20px;
+}
+.prevArrow{
+    color: #000 !important;
+    left: 0 !important;
+    width: 0 !important;
+    z-index: 20;
+}
+.prevArrow::before {
+    content: '';
+    display: none;
+}
+.prevArrow:hover{
+    background-color: #cccccc83;
+}
+.prevArrow svg{
+    font-size: 3rem !important;
+    position: absolute;
+    transition: .5s;
+    left: 20px;
+}
+.prevArrow svg:hover{
+    background-color: #cccccc83;
+}
