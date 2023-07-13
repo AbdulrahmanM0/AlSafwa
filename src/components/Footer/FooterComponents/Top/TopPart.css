@@ -34,6 +34,10 @@
 }
 .gallery-container img{
     max-width: 100px;
+    cursor: pointer;
+}
+.gallery-container img:hover{
+    box-shadow: 0 0 10px #fff;
 }
 .footerGallery{
     display: grid;

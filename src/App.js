@@ -11,6 +11,8 @@ import UpButton from './components/UpButton/UpButton';
 import './components/IntersectioObserverStyle/InterSection.css';
 import ContactUs from './components/Pages/ContactUs/ContactUsPage/ContactUs';
 import ProductPage from './components/Pages/Products/ProductPage/ProductPage';
+import PopUp from './components/PopUp/PopUp';
+import About from './components/Pages/About/AboutPage/About';
 
 function App() {
   return (
@@ -20,9 +22,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/product/:item" element={<ProductPage />} /> 
+        <Route path='/about' element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <UpButton />
+      <PopUp />
       <Footer />
     </div>
   );

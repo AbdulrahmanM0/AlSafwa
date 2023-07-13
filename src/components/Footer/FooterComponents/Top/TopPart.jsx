@@ -11,7 +11,12 @@ import { Link } from 'react-router-dom';
 
 
 export default function TopPart() {
-    const { FactoryImages } = useContext(dataStore);
+    const { FactoryImages , setPopUpToggle , setPopUpImg } = useContext(dataStore);
+    function handlePopUpImg(ImgSrc){
+        setPopUpToggle(false);
+        setPopUpImg(ImgSrc);
+    }
+
   return (
     <div className="footerTop">
         <div className="container footerTop-container">
@@ -48,7 +53,7 @@ export default function TopPart() {
                 <div className='gallery-container d-inline-block' >
                     <div className='footerGallery'>
                         {FactoryImages.map(Factoryimg=>
-                        <img key={Factoryimg} className='m-1 border border-success' src={Factoryimg} alt='galleryImg' />
+                        <img key={Factoryimg} onClick={()=>{handlePopUpImg(Factoryimg)}} className = 'm-1 border border-success' src={Factoryimg} alt='galleryImg' />
                         )}
                         </div>
                 </div>

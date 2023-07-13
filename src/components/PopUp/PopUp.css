@@ -1,0 +1,15 @@
+.popUp-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #cccccc81;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popUpImg{
+    width: 95%;
+}

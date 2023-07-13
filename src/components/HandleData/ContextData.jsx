@@ -7,8 +7,10 @@ export const dataStore = createContext();
 
 export default function ContextData(props) {
     const [navToggle,setNavToggle] = useState(false);
+    const [popUpToggle,setPopUpToggle] = useState(true);
+    const [popUpImg,setPopUpImg] = useState('');
   return (
-    <dataStore.Provider value={{navToggle,setNavToggle,CatalogueImages,FactoryImages}}>
+    <dataStore.Provider value={{navToggle,setNavToggle,CatalogueImages,FactoryImages,popUpToggle,setPopUpToggle,popUpImg,setPopUpImg}}>
         {props.children}
     </dataStore.Provider>
   )
